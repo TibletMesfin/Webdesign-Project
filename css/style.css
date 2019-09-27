@@ -1,0 +1,332 @@
+  body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .clear{
+    clear:both;
+  }
+
+  .container{
+    width: 90%;
+    background-color: #3d3d3d;
+    margin: auto;
+    margin-top: 50px;
+    height: 150px;
+    display: block;
+  }
+
+  header #logo{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    float: left;
+    z-index: 1;
+  }
+
+  header #basket{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navmenu{
+    list-style-type: none;
+    position: relative;
+    top: 70px;
+  }
+
+  .navmenu li{
+    display: inline-block;
+    padding: 2%;
+    margin: 0;
+  }
+
+  nav{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  label[for="menu"]{
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    float:left;
+    position: relative;
+    top: 50px;
+    left: 25%;
+  }
+
+  #menu{
+    display:none;
+  }
+
+  label{
+    display:none;
+  }
+
+  .boxes{
+    width: 90%;
+    background-color: #f4f4f4;
+    margin: auto;
+    margin-top: 50px;
+    z-index:0;
+  }
+
+  #womenbox{
+    float:left;
+    width: 38%;
+    height: 400px;
+    border: 10px solid #3d3d3d;
+    text-decoration-color: white;
+    background-image: url('../images/women.jpg');
+    background-size: 100% 400px;
+    background-position: center, bottom;
+    margin: 0 7%;
+  }
+
+  #womenbox h1{
+    margin: 0 0 0 0;
+    padding: 40% 40%;
+    text-decoration: underline;
+  }
+
+  #menbox{
+    float: left;
+    width: 38%;
+    height: 180px;
+    border: 10px solid #3d3d3d;
+    text-decoration-color: white;
+    background-image: url('../images/men.jpg');
+    background-size: 100% 180px;
+    border-left: 7%;
+  }
+
+  #menbox h1{
+    margin: 0 0 0 0;
+    padding: 15% 40%;
+    text-decoration: underline;
+  }
+
+  #kidsbox{
+    float: left;
+    width: 38%;
+    height: 180px;
+    border: 10px solid #3d3d3d;
+    text-decoration-color: white;
+    background-image: url('../images/kids.jpg');
+    background-position: center center;
+    border-left: 7%;
+    margin-top: 20px;
+  }
+
+  #kidsbox h1{
+    margin: 0 0 0 0;
+    padding: 15% 40%;
+    text-decoration: underline;
+  }
+
+  footer{
+    color: white;
+    text-align: center;
+  }
+
+  footer a{
+    position: relative;
+    top: 40px;
+  }
+
+  footer p{
+    position: relative;
+    top: 40px;
+  }
+
+  .content{
+    width: 60%;
+    text-decoration-color: white;
+    font-size: 30px;
+    margin:auto;
+    margin-top: 40px;
+}
+
+  .itemslayout{
+    width: 95%;
+    text-decoration-color: white;
+    font-size: 30px;
+    margin:auto;
+    margin-top: 40px;
+  }
+
+aside{
+  background-color: #3d3d3d;
+  float: left;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 30%;
+}
+
+aside a{
+  display: block;
+  padding: 40px;
+}
+
+aside h1{
+  color:white;
+}
+
+.section{
+  float: left;
+  margin: 2%;
+  text-transform: uppercase;
+}
+
+.section img{
+  border: 2px black solid;
+}
+
+.section p{
+  width: 200px;
+  text-align: center;
+  height: 30px;
+}
+
+
+@media screen and (max-width: 310px){
+  .container{
+    height: 270px;
+  }
+
+  #logo{
+    position: relative;
+    left: 20%;
+  }
+
+  header a{
+    left:-30%;
+  }
+
+  label[for="menu"]{
+    left: 40%;
+    position: relative;
+    top: 0;
+  }
+
+.navmenu li{
+  position:relative;
+  top:60px;
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+
+  label[for="menu"]{
+    left: 15px;
+    padding: 0;
+  }
+
+    header a{
+     left: -20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  label[for="menu"]{
+    display: block;
+  }
+
+  .navmenu {
+    display:none;
+    width: 98%;
+    float:left;
+    position: relative;
+    top: -10px;
+    left: -40px;
+  }
+
+  .navmenu li{
+    border: 1px solid white;
+    width: 100%;
+    display:block;
+    background-color: #3d3d3d;
+    position: relative;
+    padding: 5px;
+  }
+
+  input[type="checkbox"]:checked ~ .navmenu{
+    display: block;
+    position: relative;
+  }
+
+  #womenbox{
+    width: 90%;
+    margin: auto;
+    float: none;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  #womenbox h1{
+    padding: 75px 40%;
+    margin: 0 0 0 0;
+    position: relative;
+    align-self: center;
+  }
+  #menbox{
+    width: 90%;
+    margin: auto;
+    float: none;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  #menbox h1{
+    padding: 75px 40%;
+    margin: 0 0 0 0;
+    position: relative;
+    align-self: center;
+  }
+  #kidsbox{
+    width: 90%;
+    margin: auto;
+    float: none;
+    height: 200px;
+    box-sizing: border-box;
+  }
+
+  #kidsbox h1{
+    padding: 75px 40%;
+    margin: 0 0 0 0;
+    position: relative;
+    align-self: center;
+  }
+
+  aside {
+    width: 95%;
+    float:left;
+    position: relative;
+    top: -50px;
+    left: -2.5%;
+  }
+
+  .section{
+    margin: 2px;
+  }
+
+}
